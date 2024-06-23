@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import "./styles/App.scss";
 import NoteList from "./components/NoteList";
 import Search from "./components/Search";
+import Header from "./components/Header";
 
 function App() {
   const [notes, setNotes] = useState([
@@ -28,7 +29,9 @@ function App() {
     },
   ]);
 
-const [ searchText, setSearchText ] = useState(' ');
+  const [searchText, setSearchText] = useState("");
+
+  const [lightMode, setLightMode] = useState(false);
 
   const addNote = (text) => {
     const date = new Date();
@@ -37,9 +40,7 @@ const [ searchText, setSearchText ] = useState(' ');
       text,
       date: date.toLocaleDateString(),
     };
-    //creates new array *GOOD* does not mutate already existing array *BAD*
-    const allNotesArr = [addedNote, ...notes]; //this wis the array that contains all the notes [...existing, newlyAdded]
-
+    const allNotesArr = [addedNote, ...notes];
     setNotes(allNotesArr);
   };
 
@@ -49,17 +50,27 @@ const [ searchText, setSearchText ] = useState(' ');
   };
 
   const editNote = (id, editText) => {
-    const updateNotes = notes.map((note) =>
+    const updatedNotes = notes.map((note) =>
       note.id === id ? { ...note, text: editText } : note
     );
-    setNotes(updateNotes)
+    setNotes(updatedNotes);
   };
 
   return (
-    <div className="master">
-      <Search handleSearch={setSearchText}/>
-      <NoteList notes={notes.filter((note)=>
-      note.text.toLocaleLowerCase().includes(searchText))} addNoteFunc={addNote} handleDelete={deleteNote} handleEdit={editNote}/>
+    <div className={`${lightMode && "light-mode"}`}>
+      <div className="master">
+        <Header handleLightMode={setLightMode} lightMode={lightMode}/>
+        <Search handleSearch={setSearchText} />{" "}
+        {/* Pass setSearchText as handleSearch */}
+        <NoteList
+          notes={notes.filter((note) =>
+            note.text.toLowerCase().includes(searchText.toLowerCase())
+          )}
+          addNoteFunc={addNote}
+          handleDelete={deleteNote}
+          handleEdit={editNote}
+        />
+      </div>
     </div>
   );
 }

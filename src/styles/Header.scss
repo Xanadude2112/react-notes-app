@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  filter: drop-shadow(0 0 0.3rem #edaa2f);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.title:hover {
+  filter: drop-shadow(0 0 0.5rem #e35892);
+}
+
+.h1 {
+  margin-left: 10%;
+  color: #ffffff;
+  font-family: "DM sans", sans-serif;
+  font-size: 4rem;
+}
+
+.image-div {
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+}
+
+.mode {
+  margin-right: 5%;
+  background-color: inherit;
+  border: solid 2px #d5c300;
+  border-radius: 10px;
+  padding: 0.5% 1%;
+  cursor: pointer;
+}
+
+.mode:hover{
+  background-image: linear-gradient(to right, #f6fbff, #9ccfff); 
+  .moon{
+    color: #ffffd1
+  }
+}
+
+.mode .sun {
+  color: #d5c300;
+}
+
+.mode .moon:hover{
+  color: #ffffd1
+}
+
+.light-mode{
+  .title{
+    filter: drop-shadow(0 0 0.3rem #fff0f7);
+  }
+
+  .mode{
+    border: solid 2px #151515;
+    padding: 0.5% 1%;
+  }
+  .mode:hover{
+    background-image: linear-gradient(to right, #1d0f3c, #853da7); 
+  }
+}

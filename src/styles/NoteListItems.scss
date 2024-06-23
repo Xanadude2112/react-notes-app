@@ -58,7 +58,7 @@
 }
 
 .save-button{
-  background-color: #151515;
+  background-color: inherit;
   color: #0ba500;
   border: solid 2px #0ba500;
   border-radius: 20px;
@@ -75,7 +75,7 @@
 }
 
 .cancel-button{
-  background-color: #151515;
+  background-color: inherit;
   color: #d60000;
   border: solid 2px #d60000;
   border-radius: 20px;
@@ -91,6 +91,14 @@
   box-shadow: 0px 0px 5px #d60000;
 }
 
+
+
+.light-mode{
+  .note-list-item{
+    color: black;
+  }
+
+}
 // RESPONSIVE CODE
 
 //   margin: 0 5%;
