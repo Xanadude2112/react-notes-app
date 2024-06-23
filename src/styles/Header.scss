@@ -70,3 +70,33 @@
     background-image: linear-gradient(to right, #1d0f3c, #853da7); 
   }
 }
+
+
+/* MOBILE DEVICE */
+@media (min-width: 320px) and (max-width: 480px) {
+ .h1{
+  font-size: 2rem;
+ }
+}
+
+/* IPAD / TABLETS */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* SMALL SCREENS / LAPTOPS */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  
+}
+
+/* DESKTOPS / LARGE SCREENS */
+@media (min-width: 1025px) and (max-width: 1200px) {
+ 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* CSS styles here */
+}
+

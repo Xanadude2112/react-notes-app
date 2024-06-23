@@ -6,7 +6,7 @@ function Header({ handleLightMode, lightMode }) {
       <div className="title">
         <h1 className="h1">NotePadd</h1>
         <div className="image-div">
-       <img className="image" src="src/images/lily.png" alt="lily" />
+       <img className="image" src="images/lily.png" alt="lily" />
         </div>
       </div>
       <button className="mode" onClick={() => handleLightMode((prev) => !prev)}>

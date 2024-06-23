@@ -24,7 +24,7 @@ function Footer() {
       <a href="#">
         <img
           class="logo"
-          src="src/images/lily.png"
+          src="images/lily.png"
           alt="lilypad"
         />
       </a>
