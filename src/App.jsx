@@ -4,6 +4,7 @@ import "./styles/App.scss";
 import NoteList from "./components/NoteList";
 import Search from "./components/Search";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [notes, setNotes] = useState([
@@ -69,7 +70,9 @@ function App() {
           addNoteFunc={addNote}
           handleDelete={deleteNote}
           handleEdit={editNote}
+          lightMode={lightMode}
         />
+        <Footer/>
       </div>
     </div>
   );

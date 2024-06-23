@@ -20,7 +20,7 @@
 
 textarea {
   width: 90%;
-  margin:2% 5%;
+  margin: 2% 5%;
   background-color: inherit;
   color: #cfcfcf;
   resize: unset;
@@ -65,13 +65,22 @@ textarea:focus {
   box-shadow: 0px 0px 5px #0ba500;
 }
 
-
 @keyframes fidget {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(10px); }
-  50% { transform: translateX(-10px); }
-  75% { transform: translateX(10px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .error {
@@ -82,4 +91,11 @@ textarea:focus {
   border-radius: 20px;
   padding: 5% 10%;
   animation: fidget 0.35s infinite;
+}
+
+.light-mode {
+  .add-note-item {
+    color: black;
+    box-shadow: 0px 0px 5px #ffffff;
+  }
 }
