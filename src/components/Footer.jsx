@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import image from "../images/lily.png"
 import "../styles/Footer.scss"
 
 function Footer() {
@@ -24,7 +25,7 @@ function Footer() {
       <a href="#">
         <img
           class="logo"
-          src="lily.png"
+          src={image}
           alt="lilypad"
         />
       </a>
