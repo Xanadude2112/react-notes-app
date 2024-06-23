@@ -42,10 +42,10 @@
   cursor: pointer;
 }
 
-.mode:hover{
-  background-image: linear-gradient(to right, #f6fbff, #9ccfff); 
-  .moon{
-    color: #ffffd1
+.mode:hover {
+  background-image: linear-gradient(to right, #f6fbff, #9ccfff);
+  .moon {
+    color: #ffffd1;
   }
 }
 
@@ -53,54 +53,55 @@
   color: #d5c300;
 }
 
-.mode .moon:hover{
-  color: #ffffd1
+.mode .moon:hover {
+  color: #ffffd1;
 }
 
-.light-mode{
-  .title{
+.light-mode {
+  .title {
     filter: drop-shadow(0 0 0.3rem #fff0f7);
   }
 
-  .mode{
+  .mode {
     border: solid 2px #151515;
     padding: 0.5% 1%;
   }
-  .mode:hover{
-    background-image: linear-gradient(to right, #1d0f3c, #853da7); 
+  .mode:hover {
+    background-image: linear-gradient(to right, #1d0f3c, #853da7);
   }
 }
 
-
 /* MOBILE DEVICE */
 @media (min-width: 320px) and (max-width: 480px) {
- .h1{
-  font-size: 2rem;
- }
+  .title {
+    width: 75%;
+  }
+  .h1 {
+    font-size: 2rem;
+  }
 
- .mode{
-  
- }
+  .image-div {
+    width: 75%;
+  }
+
+  .mode {
+    padding: 0.5% 2%;
+  }
 }
 
 /* IPAD / TABLETS */
 @media (min-width: 481px) and (max-width: 768px) {
-
 }
 
 /* SMALL SCREENS / LAPTOPS */
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  
 }
 
 /* DESKTOPS / LARGE SCREENS */
 @media (min-width: 1025px) and (max-width: 1200px) {
- 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* CSS styles here */
 }
-

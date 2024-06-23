@@ -21,7 +21,4 @@ function Header({ handleLightMode, lightMode }) {
   );
 }
 
-{
-  /* <i class="fa-solid fa-moon moon"></i> */
-}
 export default Header;

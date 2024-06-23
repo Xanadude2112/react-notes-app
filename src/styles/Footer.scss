@@ -74,7 +74,13 @@ a {
 
 /* MOBILE DEVICE */
 @media (min-width: 320px) and (max-width: 480px) {
- 
+ .foot-links{
+  width: 25%;
+ }
+
+ a{
+  width: 10%;
+ }
 }
 
 /* IPAD / TABLETS */
