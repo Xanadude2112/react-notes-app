@@ -20,6 +20,7 @@
 
 textarea {
   width: 90%;
+  height: 100%;
   margin: 2% 5%;
   background-color: inherit;
   color: #cfcfcf;
@@ -97,6 +98,10 @@ textarea:focus {
   .add-note-item {
     color: black;
     box-shadow: 0px 0px 5px #ffffff;
+  }
+
+  textarea{
+    color: black;
   }
 }
 

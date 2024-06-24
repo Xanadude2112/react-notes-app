@@ -1,4 +1,4 @@
-.search-bar{
+.search-bar {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -9,7 +9,7 @@
   margin: 2% 0 5% 0;
 }
 
-.search{
+.search {
   width: 100%;
   font-size: 1rem;
   background-color: inherit;
@@ -18,34 +18,32 @@
   font-family: "Nunito", sans-serif;
 }
 
-.light-mode{
-  .search-bar i{
+.light-mode {
+  .search-bar i {
     color: black;
   }
 }
 
-
 /* MOBILE DEVICE */
 @media (min-width: 320px) and (max-width: 480px) {
-.search{
-  width: 80%;
-}
+  .search-bar i {
+    padding: 2%;
+  }
+  .search {
+    width: 80%;
+  }
 }
 
 /* IPAD / TABLETS */
 @media (min-width: 481px) and (max-width: 768px) {
-
 }
 
 /* SMALL SCREENS / LAPTOPS */
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  
 }
 
 /* DESKTOPS / LARGE SCREENS */
 @media (min-width: 1025px) and (max-width: 1200px) {
- 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
