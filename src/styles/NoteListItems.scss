@@ -1,5 +1,7 @@
 .note-list-item {
   font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
   min-width: 20%;
   min-height: 170px;
   display: flex;
@@ -59,6 +61,8 @@
 
 .save-button{
   background-color: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
   color: #0ba500;
   border: solid 2px #0ba500;
   border-radius: 20px;
@@ -76,6 +80,8 @@
 
 .cancel-button{
   background-color: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
   color: #d60000;
   border: solid 2px #d60000;
   border-radius: 20px;
