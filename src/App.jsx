@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import "./styles/App.scss";
 import NoteList from "./components/NoteList";
@@ -34,6 +34,18 @@ function App() {
 
   const [lightMode, setLightMode] = useState(false);
 
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+
+    if(savedNotes){
+      setNotes(savedNotes)
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+  }, [notes]);
+
   const addNote = (text) => {
     const date = new Date();
     const addedNote = {
@@ -60,7 +72,7 @@ function App() {
   return (
     <div className={`${lightMode && "light-mode"}`}>
       <div className="master">
-        <Header handleLightMode={setLightMode} lightMode={lightMode}/>
+        <Header handleLightMode={setLightMode} lightMode={lightMode} />
         <Search handleSearch={setSearchText} />{" "}
         {/* Pass setSearchText as handleSearch */}
         <NoteList
@@ -72,7 +84,7 @@ function App() {
           handleEdit={editNote}
           lightMode={lightMode}
         />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
