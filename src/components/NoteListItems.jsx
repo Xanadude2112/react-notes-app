@@ -32,11 +32,11 @@ function NoteListItems({ id, text, date, handleDelete, handleEdit }) {
             onChange={(event) => setTextEdit(event.target.value)}
           />
           <div className="note-footer">
-            <button className="save-button" onClick={handleSaveClick}>
-              Save
-            </button>
             <button className="cancel-button" onClick={handleCancelClick}>
               Cancel
+            </button>
+            <button className="save-button" onClick={handleSaveClick}>
+              Save
             </button>
           </div>
         </>
