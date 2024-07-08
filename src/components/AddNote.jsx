@@ -4,7 +4,7 @@ import "../styles/AddNote.scss";
 function AddNote({ addNoteFunc }) {
   const [newNote, setNewNote] = useState("");
 
-  const charLimit = 200;
+  const charLimit = 300;
 
   const handleChange = (event) => {
     if(charLimit - event.target.value.length >= 0){
